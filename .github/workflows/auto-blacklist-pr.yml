@@ -14,9 +14,9 @@
 
 name: Auto Blacklist PR / 自动黑名单 PR
 
+# Automatic triggers paused at the owner's request on 2026-10-17.
 on:
-  issues:
-    types: [opened, labeled]
+  workflow_dispatch:
 
 jobs:
   create-blacklist-pr:

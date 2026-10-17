@@ -14,9 +14,9 @@
 
 name: Manage License Headers
 
+# Automatic triggers paused at the owner's request on 2026-10-17.
 on:
-  schedule:
-    - cron: '0 0 * * 1'
+  workflow_dispatch:
 
 jobs:
   license-check:

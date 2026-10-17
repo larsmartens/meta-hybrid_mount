@@ -13,9 +13,10 @@
 # limitations under the License.
 
 name: Auto Label and Close Invalid Issues
+# Automatic triggers paused at the owner's request on 2026-10-17.
 on:
-  issues:
-    types: [opened, edited]
+  workflow_dispatch:
+
 jobs:
   label-and-close:
     runs-on: ubuntu-latest

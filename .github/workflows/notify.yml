@@ -14,25 +14,8 @@
 
 name: Notify crate
 
+# Automatic triggers paused at the owner's request on 2026-10-17.
 on:
-  pull_request:
-    branches:
-      - '**'
-    paths:
-      - 'Cargo.lock'
-      - 'Cargo.toml'
-      - 'rust-toolchain.toml'
-      - 'tools/notify/**'
-      - '.github/workflows/notify.yml'
-  push:
-    branches:
-      - '**'
-    paths:
-      - 'Cargo.lock'
-      - 'Cargo.toml'
-      - 'rust-toolchain.toml'
-      - 'tools/notify/**'
-      - '.github/workflows/notify.yml'
   workflow_dispatch:
 
 permissions:

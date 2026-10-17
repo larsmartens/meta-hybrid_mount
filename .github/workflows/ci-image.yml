@@ -14,17 +14,9 @@
 
 name: Build CI Image
 
+# Automatic triggers paused at the owner's request on 2026-10-17.
 on:
-  push:
-    branches:
-      - 'dev'
-    paths:
-      - '.github/docker/ci/Dockerfile'
-      - '.github/workflows/ci-image.yml'
   workflow_dispatch:
-  schedule:
-    - cron: '0 3 * * 1'
-
 permissions:
   contents: read
   packages: write

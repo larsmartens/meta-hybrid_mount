@@ -13,13 +13,8 @@
 # limitations under the License.
 
 name: lints-check
+# Automatic triggers paused at the owner's request on 2026-10-17.
 on:
-  pull_request:
-    branches:
-      - '**'
-  push:
-    branches:
-      - '**'
   workflow_dispatch:
 
 permissions:

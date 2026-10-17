@@ -14,39 +14,8 @@
 
 name: Build Hybrid-Mount
 
+# Automatic triggers paused at the owner's request on 2026-10-17.
 on:
-  push:
-    branches:
-      - 'dev'
-    paths:
-      - 'src/**'
-      - 'Cargo.*'
-      - 'module/**'
-      - 'webui'
-      - 'webui/**'
-      - 'xtask/**'
-      - 'build.rs'
-      - 'scripts/build-local.sh'
-      - 'tools/notify/**'
-      - '.github/workflows/build-kasumi-lkm.yml'
-      - '.github/workflows/kasumi-lkm.yml'
-      - '.github/workflows/build.yml'
-  pull_request:
-    branches:
-      - 'dev'
-    paths:
-      - 'src/**'
-      - 'Cargo.*'
-      - 'module/**'
-      - 'webui'
-      - 'webui/**'
-      - 'xtask/**'
-      - 'build.rs'
-      - 'scripts/build-local.sh'
-      - 'tools/notify/**'
-      - '.github/workflows/build-kasumi-lkm.yml'
-      - '.github/workflows/kasumi-lkm.yml'
-      - '.github/workflows/build.yml'
   workflow_dispatch:
 
 concurrency:
